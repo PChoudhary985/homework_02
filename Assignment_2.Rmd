@@ -15,14 +15,17 @@ library(tidyverse)
 # Task 1
 # We have created a relative path for collegedata.
 ```{r}
-college.data <- read.csv("collegedata.csv")
+college.data <- read_csv("collegedata.csv")
 ```
 
 # Task 2
-# This dataset contains 12 columns and 7175 rows.
+# This dataset contains 13 columns and 7175 rows.
 ```{r}
-ncol(college.data)
-nrow(college.data)
+college.data %>%
+  summarise(
+    Rows = n(),
+    Columns = ncol(pick(everything()))
+  )
 ```
 
 
