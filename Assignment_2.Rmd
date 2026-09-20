@@ -36,7 +36,7 @@ college.1
 ```
 
 #Task 4
-# I removed all the na values and plotted the average SAT Score for students and the admissions rate on the y-axis.There seems to be high variability from scores 800-1000, but more of a linear trend from 1200-1400. 
+# I removed all the na values and plotted the average SAT Score for students and the admissions rate on the y-axis. There does not appear to be a strong correlation between SAT Score and Admissions, and the majority of scores 900-1180. 
 ```{r}
 ggplot(college.1, aes(x = SAT_AVG, y = ADM_RATE))+geom_point(na.rm = TRUE)+
   labs(title = "College Admissions")
