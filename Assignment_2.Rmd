@@ -1,0 +1,27 @@
+---
+title: "Assignment 2"
+author: "Choudhary"
+date: "2026-09-20"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+```
+# Task 1
+```{r}
+college.data <- read.csv("collegedata.csv")
+```
+# Task 2
+```{r}
+ncol(college.data)
+nrow(college.data)
+```
+# This dataset contains 12 columns and 7175 rows.
+
+
+
